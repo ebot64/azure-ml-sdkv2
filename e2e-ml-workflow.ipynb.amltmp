@@ -1382,12 +1382,15 @@
         {
           "output_type": "stream",
           "name": "stdout",
-          "text": "......................................................."
+          "text": ".......................................................................................................................Deployment blue provisioning state: Succeeded\n"
         }
       ],
       "execution_count": 26,
       "metadata": {
-        "name": "model"
+        "name": "model",
+        "gather": {
+          "logged": 1694214150188
+        }
       }
     },
     {
@@ -1409,9 +1412,12 @@
         "os.makedirs(deploy_dir, exist_ok=True)"
       ],
       "outputs": [],
-      "execution_count": null,
+      "execution_count": 27,
       "metadata": {
-        "name": "sample-request.json"
+        "name": "sample-request.json",
+        "gather": {
+          "logged": 1694214150669
+        }
       }
     },
     {
@@ -1429,8 +1435,14 @@
         "  }\n",
         "}"
       ],
-      "outputs": [],
-      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": "Writing ./deploy/sample-request.json\n"
+        }
+      ],
+      "execution_count": 28,
       "metadata": {
         "name": "write-sample-request"
       }
@@ -1445,8 +1457,17 @@
         "    deployment_name=\"blue\",\n",
         ")"
       ],
-      "outputs": [],
-      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "execution_count": 29,
+          "data": {
+            "text/plain": "'[1, 0]'"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 29,
       "metadata": {
         "attributes": {
           "classes": [
@@ -1454,7 +1475,10 @@
           ],
           "id": ""
         },
-        "name": "ml_client.online_endpoints.invoke"
+        "name": "ml_client.online_endpoints.invoke",
+        "gather": {
+          "logged": 1694214346810
+        }
       }
     },
     {
@@ -1508,6 +1532,11 @@
     "microsoft": {
       "ms_spell_check": {
         "ms_spell_check_language": "en"
+      },
+      "host": {
+        "AzureML": {
+          "notebookHasBeenCompleted": true
+        }
       }
     },
     "kernel_info": {
